@@ -18,7 +18,7 @@
   /* Fonts */
   --ff-bellefair: 'Bellefair', serif;
   --ff-barlow-condensed: 'Barlow Condensed', sans-serif;
-
+  --ff-barlow: 'Barlow', sans-serif;
   /* Others */
 }
 
@@ -157,6 +157,30 @@ a {
 
 .header__link:not(.header__link--active):hover::after {
   transform: scaleX(1);
+}
+
+/**************************************************/
+/* Main */
+.home__title {
+  font-family: var(--ff-barlow-condensed);
+  font-size: 1.75rem;
+  font-weight: 400;
+  letter-spacing: 4.75px;
+  color: var(--clr-light-purple);
+}
+
+.large-title {
+  font-family: var(--ff-bellefair);
+  font-size: 9.375rem;
+  font-weight: 400;
+  color: var(--clr-white);
+}
+
+.home__description {
+  font-family: var(--ff-barlow);
+  font-size: 1.125rem;
+  line-height: 2rem;
+  color: var(--clr-light-purple);
 }
 
 /**************************************************/
