@@ -79,9 +79,9 @@ a {
 }
 
 .header__line {
-  /* width: clamp(1rem, 100%, 29.625rem); */
+  width: clamp(1rem, 100%, 29.625rem);
   /* width: clamp(1rem, 100%, 59.25rem); */
-  width: 29.625rem;
+  /* width: 29.625rem; */
   height: 1px;
   /* flex: 0 1 29.625rem; */
   position: relative;
