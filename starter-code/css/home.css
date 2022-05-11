@@ -13,7 +13,6 @@
   --clr-dark-blue: hsl(230, 33%, 7%);
   --clr-light-purple: hsl(231, 77%, 90%);
   --clr-white: hsl(0, 0%, 100%);
-  --clr-gray: hsl(0, 0%, 59%);
 
   /* Fonts */
   --ff-bellefair: 'Bellefair', serif;
@@ -46,8 +45,8 @@ a {
   width: 100%;
   height: 2.5rem;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header__logo,
@@ -102,9 +101,7 @@ a {
   position: fixed;
   top: 0;
   right: 0;
-  background-color: hsla(0, 0%, 100%, 4%);
-  /* backdrop-filter: blur(28px); */
-  backdrop-filter: blur(40px);
+  background-color: hsl(230, 33%, 7%, 99%);
   padding: 2rem 1.5rem 0 2rem;
   z-index: 1000;
   transform: translateX(100%);
@@ -252,10 +249,27 @@ a {
 }
 
 /**************************************************/
+/* CSS Supports */
+@supports (backdrop-filter: blur()) {
+  .header__nav {
+    background-color: hsla(0, 0%, 100%, 4%);
+    backdrop-filter: blur(60px);
+  }
+}
+
+/**************************************************/
 /* Media Queries */
-@media (min-width: 768px) {
+
+/* Tablet */
+@media (min-width: 48rem) {
   body {
     background-image: url('../assets/home/background-home-tablet.jpg');
+    padding: 0 0 5.5rem 0;
+  }
+
+  .header {
+    height: 6rem;
+    padding-inline-start: 2.375rem;
   }
 
   .logo-icon {
@@ -266,58 +280,35 @@ a {
   .header__close-btn {
     display: none;
   }
-}
-
-@media (min-width: 1024px) {
-  body {
-    background-image: url('../assets/home/background-home-desktop.jpg');
-    padding-block-start: 2.5rem;
-  }
-
-  .header {
-    width: 100%;
-    height: 6rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-inline-start: 3.25rem;
-  }
-
-  .header__line {
-    display: block;
-  }
 
   .header__nav {
+    width: max-content;
     height: 100%;
     min-height: auto;
-    display: flex;
     flex-direction: row;
     align-items: center;
     position: relative;
-    background-color: hsla(0, 0%, 100%, 4%);
-    backdrop-filter: blur(28px);
-    padding: 0 10.75rem 0 7.75rem;
-    transform: translateX(0);
+    padding: 0 3rem 0;
+    transform: none;
   }
 
   .header__list {
     width: max-content;
     height: 100%;
-    list-style: none;
-    display: flex;
     flex-direction: row;
-    column-gap: 3rem;
+    column-gap: 2.25rem;
+    padding: 0;
   }
 
   .header__item {
     height: 100%;
-    display: inline-flex;
-    align-items: center;
-    position: relative;
   }
 
   .header__link {
     width: auto;
+    font-size: 0.875rem;
+    letter-spacing: 2.36px;
+    padding-block: 0.5em;
   }
 
   .header__link::after,
@@ -328,12 +319,96 @@ a {
     right: auto;
   }
 
+  .header__number {
+    display: none;
+  }
+
+  .home__main {
+    margin-block-start: 6.75rem;
+  }
+
+  .home__intro {
+    max-width: 27.5rem;
+  }
+
+  .home__title {
+    font-size: 1.25rem;
+    letter-spacing: 3.38px;
+  }
+
+  .large-title {
+    font-size: 9.375rem;
+    line-height: 9.375rem;
+  }
+
+  .home__title .large-title {
+    margin-block: 1.375rem;
+  }
+
+  .home__description {
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+
+  .home__button {
+    width: 15.125rem;
+    height: 15.125rem;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-block-start: 9.75rem;
+  }
+
+  .home__button::after {
+    width: 24rem;
+    height: 24rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 64rem) {
+  body {
+    background-image: url('../assets/home/background-home-desktop.jpg');
+    padding-block-start: 2.5rem;
+  }
+
+  .header {
+    width: 100%;
+    height: 6rem;
+    justify-content: center;
+    padding-inline-start: 3.25rem;
+  }
+
+  .header__line {
+    display: block;
+  }
+
+  .header__nav {
+    padding: 0 10.75rem 0 7.75rem;
+  }
+
+  .header__list {
+    column-gap: 3rem;
+  }
+
+  .header__link {
+    font-size: 1rem;
+    letter-spacing: 2.7px;
+  }
+
+  .header__number {
+    display: inline-block;
+  }
+
   .home__main {
     flex-direction: row;
     align-items: flex-end;
     margin-block-start: 15.75rem;
     padding-inline-end: 6rem;
     text-align: left;
+  }
+
+  .home__intro {
+    max-width: 28.125rem;
   }
 
   .home__title {
@@ -354,16 +429,8 @@ a {
   .home__button {
     width: 17.125rem;
     height: 17.125rem;
-    position: relative;
-    font-family: var(--ff-bellefair);
     font-size: 2rem;
-    text-transform: uppercase;
     letter-spacing: 2px;
-    color: var(--clr-dark-blue);
-    background-color: var(--clr-white);
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
   }
 
   .home__button::after {
