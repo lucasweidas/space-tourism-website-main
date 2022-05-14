@@ -374,7 +374,6 @@ a {
   }
 
   .header {
-    /* width: min(100%, 90rem); */
     justify-content: center;
     padding-inline-start: 3.375rem;
   }
