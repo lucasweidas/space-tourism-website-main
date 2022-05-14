@@ -84,11 +84,11 @@ a {
   height: 1px;
   display: none;
   position: relative;
-  right: -2rem;
+  right: -1.875rem;
   background-color: var(--clr-white);
   opacity: 0.25;
-  margin-inline-start: 2rem;
-  z-index: 1;
+  margin-inline-start: 2.125rem;
+  z-index: 10;
 }
 
 .header__nav {
@@ -103,7 +103,7 @@ a {
   right: 0;
   background-color: hsl(230, 33%, 7%, 99%);
   padding: 2rem 1.5rem 0 2rem;
-  z-index: 1000;
+  z-index: 100;
   transform: translateX(100%);
   transition: transform var(--transition-slow) ease-in-out;
 }
@@ -251,7 +251,8 @@ a {
 /**************************************************/
 /* CSS Supports */
 @supports (backdrop-filter: blur()) {
-  .header__nav {
+  .header__nav,
+  .header__nav::after {
     background-color: hsla(0, 0%, 100%, 4%);
     backdrop-filter: blur(60px);
   }
@@ -290,6 +291,7 @@ a {
     position: relative;
     padding: 0 3rem 0;
     transform: none;
+    z-index: 1;
   }
 
   .header__list {
@@ -372,10 +374,9 @@ a {
   }
 
   .header {
-    width: 100%;
-    height: 6rem;
+    width: clamp(1rem, 100%, 90rem);
     justify-content: center;
-    padding-inline-start: 3.25rem;
+    padding-inline-start: 3.375rem;
   }
 
   .header__line {
@@ -383,7 +384,8 @@ a {
   }
 
   .header__nav {
-    padding: 0 10.75rem 0 7.75rem;
+    width: clamp(1rem, 100%, 51.875rem);
+    padding: 0 clamp(5rem, 9vw, 7.75rem) 0;
   }
 
   .header__list {
