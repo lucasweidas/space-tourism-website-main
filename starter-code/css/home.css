@@ -42,7 +42,7 @@ a {
 /**************************************************/
 /* Header */
 .header {
-  width: 100%;
+  width: min(100%, 90rem);
   height: 2.5rem;
   display: flex;
   justify-content: space-between;
@@ -168,13 +168,14 @@ a {
 /**************************************************/
 /* Main */
 .home__main {
-  width: min(calc(100vw - 3rem), 69.5rem);
+  width: min(100%, 90rem);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  row-gap: 4.875rem;
   text-align: center;
-  margin-block-start: 3.125rem;
+  padding-block-start: 3.125rem;
 }
 
 .home__intro {
@@ -224,7 +225,6 @@ a {
   border: none;
   border-radius: 50%;
   cursor: pointer;
-  margin-block-start: 4.875rem;
 }
 
 .home__button::after {
@@ -326,7 +326,8 @@ a {
   }
 
   .home__main {
-    margin-block-start: 6.75rem;
+    row-gap: 9.75rem;
+    padding-block-start: 6.75rem;
   }
 
   .home__intro {
@@ -357,7 +358,6 @@ a {
     height: 15.125rem;
     font-size: 2rem;
     letter-spacing: 2px;
-    margin-block-start: 9.75rem;
   }
 
   .home__button::after {
@@ -370,11 +370,11 @@ a {
 @media (min-width: 64rem) {
   body {
     background-image: url('../assets/home/background-home-desktop.jpg');
-    padding-block-start: 2.5rem;
+    padding-block: 2.5rem 8rem;
   }
 
   .header {
-    width: clamp(1rem, 100%, 90rem);
+    /* width: min(100%, 90rem); */
     justify-content: center;
     padding-inline-start: 3.375rem;
   }
@@ -404,9 +404,9 @@ a {
   .home__main {
     flex-direction: row;
     align-items: flex-end;
-    margin-block-start: 15.75rem;
-    padding-inline-end: 6rem;
+    column-gap: 5.75rem;
     text-align: left;
+    padding: 15.75rem clamp(5.75rem, 10vw, 10.25rem) 0;
   }
 
   .home__intro {
@@ -441,8 +441,8 @@ a {
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1440px) {
   .home__main {
-    padding-inline-end: 0;
+    padding-inline: 10.25rem;
   }
 }
