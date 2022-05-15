@@ -31,6 +31,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  row-gap: 3.125rem;
   background: url('../assets/home/background-home-mobile.jpg') top center / cover no-repeat;
   padding: 1.5rem 1.5rem 3rem;
 }
@@ -175,7 +176,6 @@ a {
   justify-content: space-between;
   row-gap: 4.875rem;
   text-align: center;
-  padding-block-start: 3.125rem;
 }
 
 .home__intro {
@@ -264,6 +264,7 @@ a {
 /* Tablet */
 @media (min-width: 48rem) {
   body {
+    row-gap: 6.75rem;
     background-image: url('../assets/home/background-home-tablet.jpg');
     padding: 0 0 5.5rem 0;
   }
@@ -327,7 +328,6 @@ a {
 
   .home__main {
     row-gap: 9.75rem;
-    padding-block-start: 6.75rem;
   }
 
   .home__intro {
@@ -369,6 +369,7 @@ a {
 /* Desktop */
 @media (min-width: 64rem) {
   body {
+    row-gap: 15.75rem;
     background-image: url('../assets/home/background-home-desktop.jpg');
     padding-block: 2.5rem 8rem;
   }
@@ -405,7 +406,7 @@ a {
     align-items: flex-end;
     column-gap: 5.75rem;
     text-align: left;
-    padding: 15.75rem clamp(5.75rem, 10vw, 10.25rem) 0;
+    padding: 0 clamp(5.75rem, 10vw, 10.25rem);
   }
 
   .home__intro {
