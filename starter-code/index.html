@@ -24,14 +24,15 @@
           <img src="assets/shared/logo.svg" alt="" class="logo-icon" />
         </a>
       </div>
-      <button class="header__open-btn" data-menu-btn>
+      <button class="header__open-nav" data-menu-btn aria-controls="header-nav" aria-expanded="false" aria-label="Open menu">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21">
           <g fill="#D0D6F9" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z" /></g>
         </svg>
       </button>
+      <!-- <button class="header__nav-toggle" data-menu-btn aria-controls="header-nav" aria-expanded="false" aria-label="Open menu"></button> -->
       <span class="header__line"></span>
-      <nav class="header__nav">
-        <button class="header__close-btn" data-menu-btn>
+      <nav class="header__nav" id="header-nav">
+        <button class="header__close-nav" data-menu-btn aria-controls="header-nav" aria-label="Close menu" aria-expanded="true">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21">
             <g fill="#D0D6F9" fill-rule="evenodd">
               <path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z" />
