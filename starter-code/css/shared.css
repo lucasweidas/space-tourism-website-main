@@ -32,7 +32,6 @@ body {
   flex-direction: column;
   align-items: center;
   background: top center / cover no-repeat;
-  /* padding-block-start: 1.5rem; */
   overflow-x: hidden;
 }
 
@@ -194,10 +193,6 @@ a {
 
 /* Tablet */
 @media (min-width: 48rem) {
-  /* body {
-    padding: 0;
-  } */
-
   .header {
     height: 6rem;
     padding-inline-start: 2.375rem;
@@ -261,10 +256,6 @@ a {
 
 /* Desktop */
 @media (min-width: 64rem) {
-  /* body {
-    padding-block-start: 2.5rem;
-  } */
-
   .header {
     justify-content: center;
     padding-inline-start: 3.375rem;
