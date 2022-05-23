@@ -1,0 +1,22 @@
+/**************************************************/
+/* General Styles */
+body {
+  background-image: url('../assets/technology/background-technology-mobile.jpg');
+}
+
+/**************************************************/
+/* Media Queries */
+
+/* Tablet */
+@media (min-width: 48rem) {
+  body {
+    background-image: url('../assets/technology/background-technology-tablet.jpg');
+  }
+}
+
+/* Desktop */
+@media (min-width: 64rem) {
+  body {
+    background-image: url('../assets/technology/background-technology-desktop.jpg');
+  }
+}

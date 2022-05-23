@@ -1,0 +1,22 @@
+/**************************************************/
+/* General Styles */
+body {
+  background-image: url('../assets/destination/background-destination-mobile.jpg');
+}
+
+/**************************************************/
+/* Media Queries */
+
+/* Tablet */
+@media (min-width: 48rem) {
+  body {
+    background-image: url('../assets/destination/background-destination-tablet.jpg');
+  }
+}
+
+/* Desktop */
+@media (min-width: 64rem) {
+  body {
+    background-image: url('../assets/destination/background-destination-desktop.jpg');
+  }
+}

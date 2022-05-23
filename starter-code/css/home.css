@@ -3,7 +3,8 @@
 body {
   row-gap: 3.125rem;
   background-image: url('../assets/home/background-home-mobile.jpg');
-  padding: 0 1.5rem 3rem;
+  /* padding: 0 1.5rem 3rem; */
+  padding-block-end: 3rem;
 }
 
 /**************************************************/
@@ -97,7 +98,8 @@ body {
   body {
     row-gap: 6.75rem;
     background-image: url('../assets/home/background-home-tablet.jpg');
-    padding: 0 0 5.5rem 0;
+    /* padding: 0 0 5.5rem 0; */
+    padding-block-end: 5.5rem;
   }
 
   .home__main {

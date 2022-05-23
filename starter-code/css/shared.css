@@ -33,6 +33,7 @@ body {
   align-items: center;
   background: top center / cover no-repeat;
   overflow-x: hidden;
+  padding-inline: 1.5rem;
 }
 
 a {
@@ -193,6 +194,10 @@ a {
 
 /* Tablet */
 @media (min-width: 48rem) {
+  body {
+    padding-inline: 0;
+  }
+
   .header {
     height: 6rem;
     padding-inline-start: 2.375rem;
