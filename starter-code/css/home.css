@@ -23,25 +23,16 @@ body {
   max-width: 26rem;
 }
 
-.home__title {
-  font-family: var(--ff-barlow-condensed);
-  font-size: 1rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 2.7px;
+.primary-title {
   color: var(--clr-light-purple);
 }
 
-.large-title {
-  font-family: var(--ff-bellefair);
+.secondary-title {  
   font-size: 5rem;
-  font-weight: 400;
-  letter-spacing: 0;
   line-height: 6.25rem;
-  color: var(--clr-white);
 }
 
-.home__title .large-title {
+.primary-title .secondary-title {
   display: inline-block;
   margin-block: 1rem;
 }
@@ -110,17 +101,12 @@ body {
     max-width: 27.5rem;
   }
 
-  .home__title {
-    font-size: 1.25rem;
-    letter-spacing: 3.38px;
-  }
-
-  .large-title {
+  .secondary-title {
     font-size: 9.375rem;
     line-height: 9.375rem;
   }
 
-  .home__title .large-title {
+  .primary-title .secondary-title {
     margin-block: 1.375rem;
   }
 
@@ -163,12 +149,7 @@ body {
     max-width: 28.125rem;
   }
 
-  .home__title {
-    font-size: 1.75rem;
-    letter-spacing: 4.72px;
-  }
-
-  .large-title {
+  .secondary-title {
     font-size: 9.375rem;
     line-height: normal;
   }

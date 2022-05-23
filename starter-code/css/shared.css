@@ -190,6 +190,22 @@ a {
 }
 
 /**************************************************/
+/* Main */
+.primary-title {
+  font-family: var(--ff-barlow-condensed);
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.169em;
+}
+
+.secondary-title {
+  font-family: var(--ff-bellefair);
+  letter-spacing: normal;
+  color: var(--clr-white);
+}
+
+/**************************************************/
 /* Media Queries */
 
 /* Tablet */
@@ -257,6 +273,10 @@ a {
   .header__number {
     display: none;
   }
+
+  .primary-title {
+    font-size: 1.25rem;
+  }
 }
 
 /* Desktop */
@@ -287,6 +307,10 @@ a {
 
   .header__number {
     display: inline-block;
+  }
+
+  .primary-title {
+    font-size: 1.75rem;
   }
 }
 
