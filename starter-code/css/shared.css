@@ -191,7 +191,7 @@ a {
 
 /**************************************************/
 /* Main */
-.primary-title {
+.main__primary-title {
   font-family: var(--ff-barlow-condensed);
   font-size: 1rem;
   font-weight: 400;
@@ -199,10 +199,17 @@ a {
   letter-spacing: 0.169em;
 }
 
-.secondary-title {
+.main__secondary-title {
   font-family: var(--ff-bellefair);
   letter-spacing: normal;
   color: var(--clr-white);
+}
+
+.main__description {
+  font-family: var(--ff-barlow);
+  font-size: 0.938rem;
+  line-height: 1.563rem;
+  color: var(--clr-light-purple);
 }
 
 /**************************************************/
@@ -274,8 +281,13 @@ a {
     display: none;
   }
 
-  .primary-title {
+  .main__primary-title {
     font-size: 1.25rem;
+  }
+
+  .main__description {
+    font-size: 1rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -309,8 +321,13 @@ a {
     display: inline-block;
   }
 
-  .primary-title {
+  .main__primary-title {
     font-size: 1.75rem;
+  }
+
+  .main__description {
+    font-size: 1.125rem;
+    line-height: 2rem;
   }
 }
 
