@@ -201,6 +201,7 @@ a {
 
 .main__secondary-title {
   font-family: var(--ff-bellefair);
+  text-transform: uppercase;
   letter-spacing: normal;
   color: var(--clr-white);
 }
