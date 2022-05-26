@@ -11,6 +11,7 @@
 :root {
   /* Colors */
   --clr-dark-blue: hsl(230, 33%, 7%);
+  --clr-greyish-blue: hsl(231, 15%, 26%);
   --clr-light-purple: hsl(231, 77%, 90%);
   --clr-white: hsl(0, 0%, 100%);
 
@@ -192,15 +193,14 @@ a {
 /**************************************************/
 /* Main */
 .main__primary-title {
-  font-family: var(--ff-barlow-condensed);
-  font-size: 1rem;
-  font-weight: 400;
+  font: 400 1rem var(--ff-barlow-condensed);
   text-transform: uppercase;
   letter-spacing: 0.169em;
 }
 
 .main__secondary-title {
   font-family: var(--ff-bellefair);
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: normal;
   color: var(--clr-white);

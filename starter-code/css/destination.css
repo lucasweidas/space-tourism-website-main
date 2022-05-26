@@ -1,7 +1,121 @@
 /**************************************************/
 /* General Styles */
 body {
+  row-gap: 1.5rem;
   background-image: url('../assets/destination/background-destination-mobile.jpg');
+}
+
+/**************************************************/
+/* Main */
+.main {
+  text-align: center;
+}
+
+.main__primary-title {
+  color: var(--clr-white);
+}
+
+.main__primary-title strong {
+  opacity: 0.25;
+  margin-inline-end: 1rem;
+}
+
+.main__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__picture {
+  width: 10.625rem;
+  height: 10.625rem;
+  display: block;
+  margin-block: 2rem 1.625rem;
+}
+
+.main__image {
+  width: 100%;
+}
+
+.main__destination {
+  position: relative;
+}
+
+.main__options {
+  display: flex;
+  justify-content: center;
+  column-gap: 1.563rem;
+  margin-block-end: 1.125rem;
+}
+
+.main__option {
+  width: 0;
+  position: absolute;
+  opacity: 0;
+}
+
+.main__label,
+.main__info__title {
+  position: relative;
+  font: 400 0.875rem var(--ff-barlow-condensed);
+  letter-spacing: 0.148rem;
+  text-transform: uppercase;
+  color: var(--clr-light-purple);
+  transition: color var(--transition-fast) ease;
+}
+
+.main__label:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 0.188rem;
+  background-color: var(--clr-white);
+  margin-block-start: 0.5rem;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transition-fast) ease;
+}
+
+.main__option:checked + .main__label {
+  color: var(--clr-white);
+}
+
+.main__option:checked + .main__label::after {
+  transform: scaleX(1);
+}
+
+.main__secondary-title {
+  font-size: 3.5rem;
+}
+
+.main__description {
+  margin-block-end: 1.875rem;
+}
+
+.main__informations {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  padding-block-end: 3.75rem;
+}
+
+.main__informations::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 0.063rem;
+  background-color: var(--clr-greyish-blue);
+}
+
+.main__info__title {
+  margin-block-end: 0.625rem;
+}
+
+.main__info__data {
+  font-family: var(--ff-bellefair);
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  color: var(--clr-white);
 }
 
 /**************************************************/
