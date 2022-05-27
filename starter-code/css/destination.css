@@ -86,6 +86,10 @@ body {
   pointer-events: none;
 }
 
+.main__option:not(:checked) + .main__label:hover::after {
+  transform: scaleX(1);
+}
+
 .main__option:checked + .main__label {
   color: var(--clr-white);
 }
@@ -228,6 +232,11 @@ body {
   .main__label::after {
     bottom: -0.75rem;
     /* bottom: -0.938rem; */
+    opacity: 0.5;
+  }
+
+  .main__option:checked + .main__label::after {
+    opacity: 1;
   }
 
   .main__secondary-title {
