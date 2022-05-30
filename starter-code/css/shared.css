@@ -198,6 +198,11 @@ a {
   letter-spacing: 0.169em;
 }
 
+.main__primary-title strong {
+  opacity: 0.25;
+  margin-inline-end: 1rem;
+}
+
 .main__secondary-title {
   font-family: var(--ff-bellefair);
   font-weight: 400;
