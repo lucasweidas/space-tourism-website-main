@@ -8,6 +8,7 @@ body {
 /**************************************************/
 /* Main */
 .main {
+  width: 100%;
   text-align: center;
 }
 
@@ -32,23 +33,12 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  position: relative;
+  border-bottom: 0.063rem solid var(--clr-greyish-blue);
   margin-block: 2rem;
 }
 
-.main__picture::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 0.063rem;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: var(--clr-greyish-blue);
-}
-
 .main__image {
-  width: clamp(11.063rem, 10vw, 13rem);
+  height: 13.875rem;
 }
 
 .main__options {
@@ -101,13 +91,132 @@ body {
 /* Tablet */
 @media (min-width: 48rem) {
   body {
+    row-gap: 2.5rem;
     background-image: url('../assets/crew/background-crew-tablet.jpg');
+  }
+
+  .main {
+    padding-inline: 2.5rem;
+  }
+
+  .main__primary-title {
+    text-align: start;
+    align-self: flex-start;
+  }
+
+  .main__content {
+    width: 28.625rem;
+    flex-direction: column-reverse;
+  }
+
+  .main__picture {
+    border-bottom: none;
+    margin-block: 0;
+    overflow-y: hidden;
+  }
+
+  .main__image {
+    height: 35.75rem;
+    position: relative;
+  }
+
+  .main__image--commander {
+    bottom: -2.5rem;
+  }
+
+  .main__text {
+    display: grid;
+    margin-block: 3.75rem 2.5rem;
+  }
+
+  .main__options {
+    margin-block: 2.5rem 0;
+    grid-row: 4 / 5;
+  }
+
+  .main__role {
+    font-size: 1.5rem;
+  }
+
+  .main__secondary-title {
+    font-size: 2.5rem;
   }
 }
 
 /* Desktop */
 @media (min-width: 64rem) {
   body {
+    row-gap: 4.75rem;
     background-image: url('../assets/crew/background-crew-desktop.jpg');
+  }
+
+  .main {
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    padding-inline: 0;
+  }
+
+  .main__section {
+    width: min(100vw, 90rem);
+    align-items: flex-start;
+    padding-inline-start: 10.375rem;
+  }
+
+  .main__primary-title {
+    align-self: flex-start;
+  }
+
+  .main__content {
+    width: 100%;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: flex-end;
+    /* column-gap: 8rem; */
+    column-gap: 5.063rem;
+  }
+
+  .main__picture {
+    width: 35.5rem;
+    overflow-y: auto;
+  }
+
+  .main__image {
+    height: 44.5rem;
+  }
+
+  .main__image--commander {
+    /* bottom: -0.625rem; */
+    bottom: 0;
+  }
+
+  .main__text {
+    display: grid;
+    grid-auto-columns: max-content;
+    margin-block: 9.625rem 0;
+  }
+
+  .main__options {
+    justify-content: flex-start;
+    column-gap: 1.5rem;
+    margin-block: 7.5rem 0;
+  }
+
+  .main__label {
+    width: 0.938rem;
+    height: 0.938rem;
+  }
+
+  .main__role {
+    font-size: 2rem;
+  }
+
+  .main__secondary-title {
+    font-size: 3.5rem;
+    margin-block: 0.938rem 1.688rem;
+  }
+
+  .main__description {
+    width: 27.75rem;
   }
 }
