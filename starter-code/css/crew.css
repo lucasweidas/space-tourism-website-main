@@ -168,18 +168,13 @@ body {
     flex-direction: row-reverse;
     align-items: flex-start;
     justify-content: flex-end;
-    column-gap: 5.063rem;
+    column-gap: clamp(3rem, 6vw, 5.063rem);
   }
 
   .main__picture {
     flex: 0 1 35.5rem;
     overflow-y: auto;
   }
-
-  /* .main__section--commander .main__picture {
-    position: relative;
-    top: -1rem;
-  } */
 
   .main__image {
     /* height: 44.5rem; */
@@ -193,13 +188,13 @@ body {
   .main__text {
     flex: 1 1 0;
     display: grid;
-    margin-block: 9.625rem 0;
+    margin-block: clamp(3rem, 11vw, 9.625rem) 0;
   }
 
   .main__options {
     justify-content: flex-start;
     column-gap: 1.5rem;
-    margin-block: 7.5rem 0;
+    margin-block: clamp(3rem, 8.5vw, 7.5rem) 0;
   }
 
   .main__label {
@@ -208,11 +203,11 @@ body {
   }
 
   .main__role {
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
   }
 
   .main__secondary-title {
-    font-size: 3.5rem;
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
     margin-block: 0.938rem 1.688rem;
   }
 
