@@ -175,12 +175,11 @@ a {
   opacity: 0.5;
   transform: scaleX(0);
   transition: transform var(--transition-fast) ease;
-  /* transform-origin: left; */
   pointer-events: none;
 }
 
-.header__link:not(.header__link--active):hover::after,
-.header__link:not(.header__link--active):focus-visible::after {
+.header__link:hover::after,
+.header__link:focus-visible::after {
   transform: scaleX(1);
 }
 

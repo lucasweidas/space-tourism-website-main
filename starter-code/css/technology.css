@@ -167,12 +167,11 @@ body {
   .main__content {
     flex-direction: row-reverse;
     justify-content: space-between;
-    column-gap: 2rem;
+    column-gap: 3rem;
   }
   
   .main__picture {
-    max-width: 32.188rem;
-    margin-block: 3.75rem 3.5rem;
+    width: min(40vw, 32.188rem);
   }
   
   .class__image {

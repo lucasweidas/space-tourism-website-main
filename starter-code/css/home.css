@@ -18,7 +18,7 @@ body {
   text-align: center;
 }
 
-.main__intro {
+.main__section {
   max-width: 26rem;
 }
 
@@ -88,7 +88,7 @@ body {
     row-gap: 9.75rem;
   }
 
-  .main__intro {
+  .main__section {
     max-width: 27.5rem;
   }
 
@@ -130,7 +130,7 @@ body {
     padding: 0 clamp(5.75rem, 10vw, 10.25rem);
   }
 
-  .main__intro {
+  .main__section {
     max-width: 28.125rem;
   }
 
