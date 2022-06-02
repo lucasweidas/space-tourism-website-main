@@ -51,7 +51,9 @@ async function changeCrewContent(dataset, optionNumber) {
   const name = document.querySelector('[data-name]');
   const role = document.querySelector('[data-role]');
   const bio = document.querySelector('[data-bio]');
+  const section = document.querySelector('[data-section]');
 
+  section.dataset.section = data.role;
   sourceImage.srcset = data.images.png;
   image.src = data.images.webp;
   image.alt = data.name;
