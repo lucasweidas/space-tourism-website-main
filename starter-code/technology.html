@@ -19,7 +19,7 @@
     <script src="js/main.js" type="module"></script>
   </head>
   <body>
-    <header class="header">
+    <header class="header" data-header>
       <div class="header__logo">
         <a href="index.html" target="_self" rel="noreferrer">
           <img src="assets/shared/logo.svg" alt="" class="logo-icon" />
@@ -61,7 +61,7 @@
       </nav>
     </header>
 
-    <main class="main">
+    <main class="main" data-main="technology">
       <section class="main__section">
         <h1 class="main__primary-title"><strong>03</strong> Space launch 101</h1>
         <div class="main__content">
@@ -71,11 +71,11 @@
           </picture>
           <div class="main__text">
             <div class="main__options">
-              <input type="radio" name="technology" id="option-1" class="main__option" data-option checked />
+              <input type="radio" name="technology" id="option-1" class="main__option" data-option="0" checked />
               <label for="option-1" class="main__label">1</label>
-              <input type="radio" name="technology" id="option-2" class="main__option" data-option />
+              <input type="radio" name="technology" id="option-2" class="main__option" data-option="1" />
               <label for="option-2" class="main__label">2</label>
-              <input type="radio" name="technology" id="option-3" class="main__option" data-option />
+              <input type="radio" name="technology" id="option-3" class="main__option" data-option="2" />
               <label for="option-3" class="main__label">3</label>
             </div>
             <section class="main__text__section">
