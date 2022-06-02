@@ -82,7 +82,6 @@ body {
   background-color: var(--clr-white);
   opacity: 0.5;
   transform: scaleX(0);
-  /* transform-origin: left; */
   transition: transform var(--transition-fast) ease;
   pointer-events: none;
 }
