@@ -115,6 +115,7 @@ body {
   }
 
   .main__picture {
+    width: auto;
     height: 33.25rem;
     border-bottom: none;
     margin-block: 0;
@@ -181,28 +182,43 @@ body {
   }
 
   .main__content {
-    width: 100%;
+    height: 40.875rem;
     flex-direction: row-reverse;
     align-items: flex-start;
     justify-content: flex-end;
+  }
+
+  [data-section='Commander'] .main__content {
     column-gap: clamp(3rem, 6vw, 5.063rem);
+  }
+
+  [data-section='Mission Specialist'] .main__content {
+    column-gap: 1.25rem;
+  }
+
+  [data-section='Pilot'] .main__content {
+    column-gap: clamp(3rem, 10vw, 8.625rem);
+  }
+
+  [data-section='Flight Engineer'] .main__content {
+    column-gap: 2.313rem;
   }
 
   .main__picture {
     height: 100%;
-    flex: 0 1 35.5rem;
-    overflow-y: auto;
+    align-items: flex-end;
+    overflow-y: visible;
   }
 
   .main__image {
-    height: 100% !important;
+    height: max-content !important;
   }
 
   .main__text {
-    width: 100% !important;
+    width: auto !important;
     height: min(100%, 25.375rem);
     grid-template-rows: repeat(3, max-content) 1fr;
-    flex: 1 1 0;
+    grid-template-columns: max-content;
     margin-block: clamp(3rem, 11vw, 9.625rem) 0;
   }
 
@@ -228,17 +244,12 @@ body {
   }
 
   .main__description {
-    width: min(30vw, 27.75rem);
+    width: min(35vw, 27.75rem);
   }
 }
 
 @media (min-width: 90rem) {
   .main__section {
     padding-inline-start: 10.375rem;
-  }
-
-  .main__text {
-    flex-grow: 0;
-    grid-auto-columns: max-content;
   }
 }

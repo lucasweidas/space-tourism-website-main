@@ -175,7 +175,7 @@ body {
   }
   
   .class__image {
-    width: calc(100% + 0.313rem);
+    width: 100%;
   }
 
   .main__text {
