@@ -14,6 +14,7 @@
   --clr-greyish-blue: hsl(231, 15%, 26%);
   --clr-light-purple: hsl(231, 77%, 90%);
   --clr-white: hsl(0, 0%, 100%);
+  --clr-white-10: hsla(0, 0%, 100%, 0.1);
 
   /* Fonts */
   --ff-bellefair: 'Bellefair', serif;
@@ -32,6 +33,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  row-gap: 1.5rem;
   background: top center / cover no-repeat;
   overflow-x: hidden;
   padding-inline: 1.5rem;
@@ -191,10 +193,24 @@ a {
 
 /**************************************************/
 /* Main */
+.main {
+  width: min(100%, 90rem);
+  display: flex;
+}
+
+.main__section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 .main__primary-title {
   font: 400 1rem var(--ff-barlow-condensed);
   text-transform: uppercase;
   letter-spacing: 0.169em;
+  color: var(--clr-white);
 }
 
 .main__primary-title strong {
@@ -210,6 +226,24 @@ a {
   color: var(--clr-white);
 }
 
+.main__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__options {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.main__option {
+  width: 0;
+  position: absolute;
+  opacity: 0;
+}
+
 .main__description {
   font-family: var(--ff-barlow);
   font-size: 0.938rem;
@@ -223,6 +257,7 @@ a {
 /* Tablet */
 @media (min-width: 48rem) {
   body {
+    row-gap: 2.5rem;
     padding-inline: 0;
   }
 
@@ -285,6 +320,10 @@ a {
     display: none;
   }
 
+  .main {
+    padding-inline: 2.5rem;
+  }
+
   .main__primary-title {
     font-size: 1.25rem;
   }
@@ -297,6 +336,10 @@ a {
 
 /* Desktop */
 @media (min-width: 64rem) {
+  body {
+    row-gap: 4.75rem;
+  }
+
   .header {
     justify-content: center;
     padding-inline-start: 3.375rem;
@@ -325,6 +368,10 @@ a {
     display: inline-block;
   }
 
+  .main {
+    padding-inline-start: 3.375rem;
+  }
+
   .main__primary-title {
     font-size: 1.75rem;
   }
@@ -346,6 +393,10 @@ a {
     position: absolute;
     bottom: 0;
     left: 38.125rem;
+  }
+
+  .main {
+    padding-inline-start: 10.375rem;
   }
 }
 

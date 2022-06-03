@@ -8,17 +8,12 @@ body {
 
 /**************************************************/
 /* Main */
-.main {
-  width: min(100%, 90rem);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.main__section {
   justify-content: space-between;
   row-gap: 4.875rem;
-  text-align: center;
 }
 
-.main__section {
+.main__text {
   max-width: 26rem;
 }
 
@@ -84,11 +79,11 @@ body {
     padding-block-end: 5.5rem;
   }
 
-  .main {
+  .main__section {
     row-gap: 9.75rem;
   }
 
-  .main__section {
+  .main__text {
     max-width: 27.5rem;
   }
 
@@ -119,18 +114,20 @@ body {
   body {
     row-gap: 15.75rem;
     background-image: url('../assets/home/background-home-desktop.jpg');
-    padding-block-end: 8rem;
+    padding-block-end: 8.188rem;
   }
 
   .main {
-    flex-direction: row;
-    align-items: flex-end;
-    column-gap: 5.75rem;
-    text-align: left;
-    padding: 0 clamp(5.75rem, 10vw, 10.25rem);
+    padding-inline: clamp(5.75rem, 10vw, 10.313rem);
   }
 
   .main__section {
+    flex-direction: row;
+    align-items: flex-end;
+    text-align: left;
+  }
+
+  .main__text {
     max-width: 28.125rem;
   }
 
@@ -154,6 +151,6 @@ body {
 
 @media (min-width: 90rem) {
   .main {
-    padding-inline: 10.25rem;
+    padding-inline: 10.375rem;
   }
 }
