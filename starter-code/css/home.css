@@ -87,6 +87,10 @@ body {
     max-width: 27.5rem;
   }
 
+  .main__primary-title {
+    text-align: center;
+  }
+
   .main__secondary-title {
     font-size: 9.375rem;
     line-height: 9.375rem;

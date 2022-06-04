@@ -106,11 +106,6 @@ body {
     background-image: url('../assets/destination/background-destination-tablet.jpg');
   }
 
-  .main__primary-title {
-    align-self: flex-start;
-    text-align: start;
-  }
-
   .main__picture {
     width: 18.75rem;
     height: 18.75rem;
@@ -156,11 +151,12 @@ body {
 @media (min-width: 64rem) {
   body {
     background-image: url('../assets/destination/background-destination-desktop.jpg');
+    padding-block-end: 6.875rem;
   }
 
   .main {
     justify-content: center;
-    padding: 0 3.438rem 6.875rem;
+    padding-inline-end: 3.438rem;
   }
 
   .main__section {
@@ -217,8 +213,7 @@ body {
 @media (min-width: 90rem) {
   .main {
     justify-content: flex-start;
-    /* padding-inline-end: 0; */
-    padding-inline: 10.375rem 0;
+    padding-inline-end: 0;
   }
 
   .main__section {

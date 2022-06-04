@@ -71,22 +71,12 @@ body {
     padding-block-end: 0;
   }
 
-  .main {
-    padding-inline: 2.5rem;
-  }
-
-  .main__primary-title {
-    align-self: flex-start;
-    text-align: start;
-  }
-
   .main__content {
     width: 100%;
     flex-direction: column-reverse;
   }
 
   .main__picture {
-    width: auto;
     height: 33.25rem;
     border-bottom: none;
     margin-block: 0;
@@ -139,7 +129,7 @@ body {
   }
 
   .main {
-    padding-inline: 3.375rem 0;
+    padding-inline-end: 0;
   }
 
   .main__section {
@@ -171,6 +161,7 @@ body {
   }
 
   .main__picture {
+    width: auto;
     height: 100%;
     align-items: flex-end;
     overflow-y: visible;
@@ -211,11 +202,5 @@ body {
 
   .main__description {
     width: min(35vw, 27.75rem);
-  }
-}
-
-@media (min-width: 90rem) {
-  .main {
-    padding-inline-start: 10.375rem;
   }
 }

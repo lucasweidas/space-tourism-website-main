@@ -263,7 +263,7 @@ a {
 
   .header {
     height: 6rem;
-    padding-inline-start: 2.375rem;
+    padding-inline-start: 2.438rem;
     margin-block-start: 0;
   }
 
@@ -321,10 +321,12 @@ a {
   }
 
   .main {
-    padding-inline: 2.5rem;
+    padding-inline: 2.438rem;
   }
 
   .main__primary-title {
+    align-self: flex-start;
+    text-align: start;
     font-size: 1.25rem;
   }
 
@@ -342,7 +344,7 @@ a {
 
   .header {
     justify-content: center;
-    padding-inline-start: 3.375rem;
+    padding-inline-start: 3.438rem;
     margin-block-start: 2.5rem;
   }
 
@@ -369,7 +371,7 @@ a {
   }
 
   .main {
-    padding-inline-start: 3.375rem;
+    padding-inline-start: 3.438rem;
   }
 
   .main__primary-title {
