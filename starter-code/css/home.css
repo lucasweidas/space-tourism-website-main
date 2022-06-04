@@ -17,16 +17,16 @@ body {
   max-width: 26rem;
 }
 
-.main__primary-title {
+.main__first-title {
   color: var(--clr-light-purple);
 }
 
-.main__secondary-title {
+.main__second-title {
   font-size: 5rem;
   line-height: 6.25rem;
 }
 
-.main__primary-title .main__secondary-title {
+.main__first-title .main__second-title {
   display: inline-block;
   margin-block: 1rem;
 }
@@ -48,16 +48,15 @@ body {
 
 .main__button::after {
   content: '';
-  width: 14rem;
-  height: 14rem;
+  width: 100%;
+  height: 100%;
   display: block;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 0;
+  left: 0;
   border-radius: 50%;
   background-color: var(--clr-white);
   opacity: 0.1;
-  transform: translate(-50%, -50%) scale(0);
   transition: transform var(--transition-slow) ease;
   pointer-events: none;
   z-index: -1;
@@ -65,7 +64,7 @@ body {
 
 .main__button:hover::after,
 .main__button:focus-visible::after {
-  transform: translate(-50%, -50%) scale(1);
+  transform: scale(1.4933);
 }
 
 /**************************************************/
@@ -87,16 +86,16 @@ body {
     max-width: 27.5rem;
   }
 
-  .main__primary-title {
+  .main__first-title {
     text-align: center;
   }
 
-  .main__secondary-title {
+  .main__second-title {
     font-size: 9.375rem;
     line-height: 9.375rem;
   }
 
-  .main__primary-title .main__secondary-title {
+  .main__first-title .main__second-title {
     margin-block: 1.375rem;
   }
 
@@ -107,9 +106,9 @@ body {
     letter-spacing: 2px;
   }
 
-  .main__button::after {
-    width: 24rem;
-    height: 24rem;
+  .main__button:hover::after,
+  .main__button:focus-visible::after {
+    transform: scale(1.58677685950413);
   }
 }
 
@@ -135,7 +134,7 @@ body {
     max-width: 28.125rem;
   }
 
-  .main__secondary-title {
+  .main__second-title {
     font-size: 9.375rem;
     line-height: normal;
   }
@@ -147,9 +146,9 @@ body {
     letter-spacing: 2px;
   }
 
-  .main__button::after {
-    width: 28.125rem;
-    height: 28.125rem;
+  .main__button:hover::after,
+  .main__button:focus-visible::after {
+    transform: scale(1.64233576642336);
   }
 }
 

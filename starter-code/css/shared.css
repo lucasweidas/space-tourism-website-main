@@ -206,19 +206,19 @@ a {
   text-align: center;
 }
 
-.main__primary-title {
+.main__first-title {
   font: 400 1rem var(--ff-barlow-condensed);
   text-transform: uppercase;
   letter-spacing: 0.169em;
   color: var(--clr-white);
 }
 
-.main__primary-title strong {
+.main__first-title strong {
   opacity: 0.25;
   margin-inline-end: 1rem;
 }
 
-.main__secondary-title {
+.main__second-title {
   font-family: var(--ff-bellefair);
   font-weight: 400;
   text-transform: uppercase;
@@ -324,7 +324,7 @@ a {
     padding-inline: 2.438rem;
   }
 
-  .main__primary-title {
+  .main__first-title {
     align-self: flex-start;
     text-align: start;
     font-size: 1.25rem;
@@ -374,7 +374,12 @@ a {
     padding-inline-start: 3.438rem;
   }
 
-  .main__primary-title {
+  .main__section {
+    align-items: flex-start;
+    text-align: start;
+  }
+
+  .main__first-title {
     font-size: 1.75rem;
   }
 

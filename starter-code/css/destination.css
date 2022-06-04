@@ -70,7 +70,7 @@ body {
   transform: scaleX(1);
 }
 
-.main__secondary-title {
+.main__second-title {
   font-size: 3.5rem;
 }
 
@@ -131,7 +131,7 @@ body {
     top: 1.938rem;
   }
 
-  .main__secondary-title {
+  .main__second-title {
     font-size: 5rem;
   }
 
@@ -156,11 +156,7 @@ body {
 
   .main {
     justify-content: center;
-    padding-inline-end: 3.438rem;
-  }
-
-  .main__section {
-    text-align: start;
+    padding-inline-end: 2rem;
   }
 
   .main__content {
@@ -179,7 +175,7 @@ body {
   }
 
   .main__text {
-    width: min(40vw, 27.813rem);
+    width: min(50vw, 27.813rem);
   }
 
   .main__options {
@@ -194,7 +190,7 @@ body {
     letter-spacing: 0.169rem;
   }
 
-  .main__secondary-title {
+  .main__second-title {
     font-size: 6.25rem;
   }
 
@@ -214,10 +210,6 @@ body {
   .main {
     justify-content: flex-start;
     padding-inline-end: 0;
-  }
-
-  .main__section {
-    align-items: flex-start;
   }
 
   .main__content {
