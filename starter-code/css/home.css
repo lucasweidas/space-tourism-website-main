@@ -43,7 +43,6 @@ body {
   background-color: var(--clr-white);
   border: none;
   border-radius: 50%;
-  cursor: pointer;
 }
 
 .main__button::after {
@@ -63,8 +62,21 @@ body {
 }
 
 .main__button:hover::after,
-.main__button:focus-visible::after {
+.main__button:focus-within::after {
   transform: scale(1.4933);
+}
+
+.main__button__link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  color: inherit;
 }
 
 /**************************************************/
@@ -107,7 +119,7 @@ body {
   }
 
   .main__button:hover::after,
-  .main__button:focus-visible::after {
+  .main__button:focus-within::after {
     transform: scale(1.58677685950413);
   }
 }
@@ -147,7 +159,7 @@ body {
   }
 
   .main__button:hover::after,
-  .main__button:focus-visible::after {
+  .main__button:focus-within::after {
     transform: scale(1.64233576642336);
   }
 }
