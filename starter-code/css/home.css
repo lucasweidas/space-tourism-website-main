@@ -139,11 +139,15 @@ body {
   .main__section {
     flex-direction: row;
     align-items: flex-end;
-    text-align: left;
+    text-align: start;
   }
 
   .main__text {
     max-width: 28.125rem;
+  }
+
+  .main__first-title {
+    text-align: start;
   }
 
   .main__second-title {

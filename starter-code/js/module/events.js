@@ -15,6 +15,6 @@ export function checkMainChange(evt) {
     const dataset = evt.currentTarget.dataset.main;
     const optionNumber = evt.target.dataset.option;
 
-    support.checkDataset(dataset, optionNumber);
+    support.checkMainDataset(dataset, optionNumber);
   }
 }
