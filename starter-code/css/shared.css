@@ -24,6 +24,7 @@
   /* Others */
   --transition-fast: 250ms;
   --transition-slow: 400ms;
+  --animation-slow: 500ms;
 }
 
 /**************************************************/

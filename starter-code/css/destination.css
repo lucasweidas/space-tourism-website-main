@@ -11,10 +11,21 @@ body {
   height: 10.625rem;
   display: block;
   margin-block: 2rem 1.625rem;
+  overflow: hidden;
 }
 
 .main__image {
   width: 100%;
+  animation: rotate_image 90000ms linear infinite;
+}
+
+@keyframes rotate_image {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
 }
 
 .main__text {
@@ -95,6 +106,25 @@ body {
   font-size: 1.75rem;
   text-transform: uppercase;
   color: var(--clr-white);
+}
+
+.hide-content {
+  opacity: 0 !important;
+}
+
+.content-animation {
+  animation: content_animation var(--animation-slow) ease-out;
+}
+
+@keyframes content_animation {
+  from {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /**************************************************/

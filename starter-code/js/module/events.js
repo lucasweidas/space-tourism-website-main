@@ -13,7 +13,7 @@ export function checkHeaderClick(evt) {
 export function checkMainChange(evt) {
   if (evt.target.matches('[data-option]')) {
     const dataset = evt.currentTarget.dataset.main;
-    const optionNumber = evt.target.dataset.option;
+    const optionNumber = Number(evt.target.dataset.option);
 
     support.checkMainDataset(dataset, optionNumber);
   }
