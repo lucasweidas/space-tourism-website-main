@@ -76,7 +76,7 @@ body {
 @keyframes content_animation {
   from {
     opacity: 0;
-    transform: translateX(-20%);
+    transform: translateX(-10%);
   }
   to {
     opacity: 1;
