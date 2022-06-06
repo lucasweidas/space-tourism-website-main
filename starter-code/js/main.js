@@ -6,7 +6,7 @@ const main = document.querySelector('[data-main]');
 
 document.addEventListener('DOMContentLoaded', () => {
   support.changeActiveNavLink();
-  support.changeButtonLink();
+  support.actualUrl.includes('index') && support.changeButtonLink();
 });
 
 header.addEventListener('click', events.checkHeaderClick);

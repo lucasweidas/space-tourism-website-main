@@ -69,14 +69,10 @@ body {
   max-width: 32.5rem;
 }
 
-.content-animation {
-  animation: content_animation var(--animation-slow) ease-out;
-}
-
 @keyframes content_animation {
   from {
     opacity: 0;
-    transform: translateX(-10%);
+    transform: translateX(-8%);
   }
   to {
     opacity: 1;

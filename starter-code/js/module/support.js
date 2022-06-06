@@ -1,17 +1,11 @@
-const actualUrl = document.location.href;
+export const actualUrl = document.location.href;
 const allNavLinks = document.querySelectorAll('[data-nav-link]');
 const sourceImage = document.querySelector('[data-source-image]');
 const image = document.querySelector('[data-image]');
+const textSection = document.querySelector('[data-text-section]');
 const name = document.querySelector('[data-name]');
 const description = document.querySelector('[data-description]');
 const elements = [];
-
-if (name) {
-  name.addEventListener('animationend', () => {
-    removeClass(elements, 'content-animation');
-    elements.length = 0;
-  });
-}
 
 export function openOrCloseHeaderNav(evt) {
   evt.currentTarget.classList.toggle('header--active');
@@ -25,7 +19,6 @@ export function changeActiveNavLink() {
 }
 
 export function changeButtonLink() {
-  if (!actualUrl.includes('index')) return;
   const buttonLink = document.querySelector('[data-button-link]');
   const randomNumber = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
 
@@ -48,13 +41,12 @@ export async function checkMainDataset(dataset, optionNumber) {
   }
 }
 
-async function changeDestinationsContent(data) {
+function changeDestinationsContent(data) {
   const distance = document.querySelector('[data-distance]');
   const travel = document.querySelector('[data-travel]');
 
-  elements.push(name, description, distance, travel);
-  addClass(elements, 'content-animation');
-  // addClass(elements, 'hide-content');
+  elements.push(textSection, name, description, distance, travel);
+  toggleAnimationClass(elements, 'content-animation');
 
   sourceImage.srcset = data.images.png;
   image.src = data.images.webp;
@@ -63,17 +55,14 @@ async function changeDestinationsContent(data) {
   description.innerText = data.description;
   distance.innerText = data.distance;
   travel.innerText = data.travel;
-
-  // removeClass(elements, 'hide-content');
-  // addClass(elements, 'drop-animation');
 }
 
-async function changeCrewContent(data) {
+function changeCrewContent(data) {
   const role = document.querySelector('[data-role]');
   const section = document.querySelector('[data-section]');
 
   elements.push(name, description, image, role);
-  addClass(elements, 'content-animation');
+  toggleAnimationClass(elements, 'content-animation');
 
   section.dataset.section = data.role;
   sourceImage.srcset = data.images.png;
@@ -84,11 +73,11 @@ async function changeCrewContent(data) {
   description.innerText = data.bio;
 }
 
-async function changeTechnologyContent(data) {
+function changeTechnologyContent(data) {
   const picture = document.querySelector('[data-picture]');
 
-  elements.push(name, description, picture);
-  addClass(elements, 'content-animation');
+  elements.push(textSection, name, description, picture, image);
+  toggleAnimationClass(elements, 'content-animation');
 
   sourceImage.srcset = data.images.portrait;
   image.src = data.images.landscape;
@@ -103,14 +92,12 @@ async function getData(dataset, optionNumber) {
   return data[dataset][optionNumber];
 }
 
-function addClass(elements, className) {
-  elements.forEach(element => {
-    element.classList.add(className);
-  });
-}
-
-function removeClass(elements, className) {
-  elements.forEach(element => {
-    element.classList.remove(className);
-  });
+function toggleAnimationClass(elements, className) {
+  for (let i = 1; i <= 2; i++) {
+    elements.forEach(element => {
+      element.classList.toggle(className);
+      if (i === 1) element.offsetWidth;
+    });
+  }
+  elements.length = 0;
 }
