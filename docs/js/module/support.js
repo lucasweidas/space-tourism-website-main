@@ -14,8 +14,11 @@ export function toggleHeaderNav(evt) {
 
 export function changeActiveNavLink() {
   allNavLinks.forEach(link => {
-    if (!actualUrl.includes(link)) return;
-    link.classList.add('header__link--active');
+    const linkUrl = link.href;
+
+    if (actualUrl.includes(linkUrl) || (linkUrl.includes('index') && !actualUrl.includes('.html'))) {
+      link.classList.add('header__link--active');
+    }
   });
 }
 
