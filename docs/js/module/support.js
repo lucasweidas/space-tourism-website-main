@@ -20,10 +20,12 @@ export function changeActiveNavLink() {
 }
 
 export function changeButtonLink() {
-  const buttonLink = document.querySelector('[data-explore-link]');
-  const randomNumber = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
+  if (actualUrl.includes('index') || !actualUrl.includes('.html')) {
+    const buttonLink = document.querySelector('[data-explore-link]');
+    const randomNumber = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
 
-  buttonLink.href = allNavLinks[randomNumber].href;
+    buttonLink.href = allNavLinks[randomNumber].href;
+  }
 }
 
 export async function checkMainDataset(dataset, optionNumber) {
