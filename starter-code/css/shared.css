@@ -420,3 +420,14 @@ a {
     backdrop-filter: blur(60px);
   }
 }
+
+/**************************************************/
+/* Accessibility */
+@media (prefers-reduced-motion) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0ms !important;
+    transition-duration: 0ms !important;
+  }
+}

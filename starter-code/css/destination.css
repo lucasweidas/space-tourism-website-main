@@ -243,3 +243,11 @@ body {
     margin-inline-start: 4rem;
   }
 }
+
+/**************************************************/
+/* Accessibility */
+@media (prefers-reduced-motion) {
+  .main__image {
+    animation-play-state: paused;
+  }
+}
