@@ -20,7 +20,7 @@ export function changeActiveNavLink() {
 }
 
 export function changeButtonLink() {
-  const buttonLink = document.querySelector('[data-button-link]');
+  const buttonLink = document.querySelector('[data-explore-link]');
   const randomNumber = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
 
   buttonLink.href = allNavLinks[randomNumber].href;
