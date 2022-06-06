@@ -23,8 +23,8 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
 
 ### Links
 
-- Solution URL: [github.com/lucasweidas/](https://github.com/lucasweidas/)
-- Live Site URL: [lucasweidas.github.io//](https://lucasweidas.github.io//)
+- Solution URL: [github.com/lucasweidas/](https://github.com/lucasweidas/space-tourism-website-main)
+- Live Site URL: [lucasweidas.github.io//](https://lucasweidas.github.io/space-tourism-website-main/)
 
 ## My process
 
